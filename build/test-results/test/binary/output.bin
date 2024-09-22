@@ -1,25 +1,38 @@
-Request method:	DELETE
-,Request URI:	https://reqres.in/api/users/2
+Request method:	POST
+*Request URI:	https://reqres.in/api/users
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
+#				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 204 No Content
-%Date: Sun, 22 Sep 2024 14:10:34 GMT
-Content-Length: 0
+Body:
+{
+    "name": "morpheus",
+    "job": "leader"
+}
+HTTP/1.1 201 Created
+%Date: Sun, 22 Sep 2024 18:00:51 GMT
+/Content-Type: application/json; charset=utf-8
+Content-Length: 83
 Connection: keep-alive
-ÙReport-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727014234&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=LENT47QuznrSu%2Fc%2FlpEoQ5CRm%2Fa%2Bgz5ATFDtZdr5mfU%3D"}]}
-°Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727014234&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=LENT47QuznrSu%2Fc%2FlpEoQ5CRm%2Fa%2Bgz5ATFDtZdr5mfU%3D
+ÓReport-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727028051&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=PhU7VSSyTT9DmUaXBRVtM1dyWUTqnegk9e7d4%2F0w2sg%3D"}]}
+ªReporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727028051&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=PhU7VSSyTT9DmUaXBRVtM1dyWUTqnegk9e7d4%2F0w2sg%3D
 |Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
 X-Powered-By: Express
  Access-Control-Allow-Origin: *
-)Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+*Etag: W/"53-MaR6WUeabwg+svkePtV6BXOomBg"
 Via: 1.1 vegur
 CF-Cache-Status: DYNAMIC
 Server: cloudflare
-CF-RAY: 8c72e1152e5f6e95-PRG
+CF-RAY: 8c74326bcdc4973d-FRA
+
+{
+    "name": "morpheus",
+    "job": "leader",
+    "id": "43",
+,    "createdAt": "2024-09-22T18:00:51.860Z"
+}
